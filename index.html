@@ -11,52 +11,53 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:400,500,600,700,900|Roboto&display=swap" rel="stylesheet">
 
 	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 </head>
 <body>
-	<header class="head">
+	<header class="head" id="header">
 		<div class="container">
 			<div class="nav">
-				<a href="#" class="logo">A</a>
-				<ul class="menu">
-					<li class="menu-list"><a href="#">Главное</a></li>
-					<li class="menu-list"><a href="#">Обо мне</a></li>
-					<li class="menu-list"><a href="#">Документы</a></li>
-					<li class="menu-list"><a href="#">Портфолио</a></li>
-					<li class="menu-list"><a href="#">Контакты</a></li>
+				<a href="#" class="logo  animated fadeInLeft">A</a>
+				<ul class="menu  animated fadeInRight">
+					<li class="menu-list"><a href="#header">Главное</a></li>
+					<li class="menu-list"><a href="#about">Обо мне</a></li>
+					<li class="menu-list"><a href="#documents">Документы</a></li>
+					<li class="menu-list"><a href="#portfolio">Портфолио</a></li>
+					<li class="menu-list"><a href="#contact">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="content">
 				<div class="offer">
-					<p class="pre-title">МОЕ ПОРТФОЛИО</p>
-					<h1 class="title">Я Кошеева Алина</h1>
-					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna neque mauris sit malesuada tempus, sit interdum arcu vitae. Habitant turpis est molestie ipsum nulla laoreet eleifend est. Sed risus nec id sit elit arcu. Ac quis libero, tempor velit convallis sagittis bibendum in sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna neque mauris sit malesuada tempus, sit interdum arcu vitae. 
+					<p class="pre-title animated slideInLeft">МОЕ ПОРТФОЛИО</p>
+					<h1 class="title animated slideInLeft">Я Кошеева Алина</h1>
+					<p class="text animated slideInLeft">
+						Родилась в красивом солнечном селении Анзорей на юге России  КБР 09.09. 2003 г. Училась в школе МКОУ СОШ им. Х. К. Табухова. О себе: целеустремлённая,комуникабельная,пунктуальная и очень любознательная
 					</p>
-					<a href="#about
-					" class="btn">Подробнее</a>
+					<a href="#about" class="btn animated slideInLeft">Подробнее</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="about">
+	<section class="about animated" id="about">
 		<div class="container">
 			<h2 class="about-title">ОБО МНЕ</h2>
 			<div class="text-container">
 				<p class="about-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna neque mauris sit malesuada tempus, sit interdum arcu vitae. Habitant turpis est molestie ipsum nulla laoreet eleifend est. Sed risus nec id sit elit arcu. Ac quis libero, tempor velit convallis sagittis bibendum in sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna neque mauris sit malesuada tempus, sit interdum arcu vitae. 
+					Родилась в красивом солнечном селении Анзорей на юге России  КБР 09.09. 2003 г. Училась в школе МКОУ СОШ им. Х. К. Табухова. О себе: целеустремлённая,комуникабельная,пунктуальная и очень любознательная 
 				</p>
 			</div>
 		</div>
 	</section>
-	<section class="documents">
+	<section class="documents" id="documents">
 		<div class="container">
-			<h2 class="documents-title">ДОКУМЕНТЫ</h2>
+			<h2 class="documents-title animated">ДОКУМЕНТЫ</h2>
 			<div class="files">
 
 
-				<div class="passport">
-					<p class="files-text">Паспорт</p>
+				<div class="passport animated">
+					<p class="files-text">Паспорт<br>и Снилс</p>
 					<span></span>
 					<button class="files-btn pasport-btn">Показать</button>
 				</div>
@@ -68,12 +69,15 @@
 							<div class="slider__item">
 								<img src="img/documents/passport2.png" alt="psw">
 							</div>
+							<div class="slider__item snils-img">
+								<img src="img/documents/snils.png" alt="psw">
+							</div>
 						</div>
 						<a href="#documents" class="close"><img src="img/cancel.svg" alt=""></a>
 					</div>
 
 
-				<div class="attestat">
+				<div class="attestat animated">
 					<p class="files-text">Аттестат</p>
 					<span></span>
 					<button class="files-btn attestat-btn">Показать</button>
@@ -97,14 +101,19 @@
 					</div>
 
 
-				<div class="snils">
-					<p class="files-text">Снилс</p>
+				<div class="snils animated">
+					<p class="files-text">Медаль</p>
 					<span></span>
 					<button class="files-btn snils-btn">Показать</button>
 				</div>
 					<div class="popup snils-popup">
-						<div class="snils-img">
-							<img src="img/documents/snils.png" alt="psw">
+						<div class="files-img">
+							<div class="slider__item">
+								<img src="img/documents/2.png" alt="psw">
+							</div>
+							<div class="slider__item">
+								<img src="img/documents/1.png" alt="psw">
+							</div>
 						</div>
 						<a href="#documents" class="close"><img src="img/cancel.svg" alt=""></a>
 					</div>
@@ -114,34 +123,58 @@
 		</div>
 	</section>
 
-	<section class="portfolio">
+	<section class="portfolio animated" id="portfolio">
 		<div class="container">
 			<h2 class="portfolio-title">ВИТРИНА ДОСТИЖЕНИЙ</h2>
 			<div class="porfolio-slider">
 				<div class="slider__item">
-					<img src="img/documents/snils.png" alt="psw">
+					<img src="img/documents/3.png" alt="psw">
 				</div>
 				<div class="slider__item">
-					<img src="img/documents/attestat__2.png" alt="psw">
+					<img src="img/documents/4.png" alt="psw">
 				</div>
 				<div class="slider__item">
-					<img src="img/documents/attestat-1.png" alt="psw">
+					<img src="img/documents/5.png" alt="psw">
 				</div>
 				<div class="slider__item">
-					<img src="img/documents/aa37b45f-f632-463f-98ec-5c14d628938a.jpg.png" alt="psw">
+					<img src="img/documents/6.png" alt="psw">
 				</div>
 				<div class="slider__item">
-					<img src="img/documents/snils.png" alt="psw">
+					<img src="img/documents/7.png" alt="psw">
 				</div>
 				<div class="slider__item">
-					<img src="img/documents/snils.png" alt="psw">
+					<img src="img/documents/8.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/9.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/10.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/11.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/12.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/13.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/14.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/15.png" alt="psw">
+				</div>
+				<div class="slider__item">
+					<img src="img/documents/16.png" alt="psw">
 				</div>
 			</div>
 			<p class="portfolio-text">Скачать портфолио для просмотра</p>
-			<a href="#" class="download-btn">Скачать</a>
+			<a href="https://drive.google.com/drive/folders/1GJjvhzy2tiI6VKCDEytNHV92nHJAOQBI?usp=sharing" class="download-btn">Скачать</a>
 		</div>
 	</section>
-	<footer class="foot">
+	<footer class="foot animated" id="contact">
 		<div class="container">
 			<div class="contact">
 				<div class="phone">

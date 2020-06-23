@@ -22,6 +22,20 @@ a {
 	text-decoration: none;
 }
 
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 4px; /* ширина для вертикального скролла */
+    height: 24px; /* высота для горизонтального скролла */
+    background-color: #fff;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #fF9B17;
+    border-radius: 9em;
+    box-shadow: 0px 0px 10px #fF9B17;
+}
+
 .container {
 	width: 1170px;
 	margin: 0 auto;
@@ -86,7 +100,7 @@ a {
 .offer {
 	width: 513px;
 	color: #fff;
-	padding-bottom: 350px;
+	padding-bottom: 450px;
 }
 
 .pre-title {
@@ -119,7 +133,7 @@ a {
 	background: #fff;
 	padding: 18px 30px;
 	border-radius: 50px;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	transition: all .3s ease;
 }
 
@@ -368,6 +382,11 @@ a {
 	margin-left: 200px;
 }
 
+.snils-popup .files-img .slider__item img {
+	margin-left: 200px;
+	width: 50%;
+}
+
 .files-img .slider__item img {
 	width: 35%;
 	justify-content: center;
@@ -404,7 +423,9 @@ a {
 	margin-left: 400px;
 }
 
-
+/*.files-img .snils-img img {
+	margin-left: 100px;
+}*/
 
 
 .active {
@@ -548,4 +569,23 @@ a {
 .right,
 .creator {
 	color: #fff;
+}
+
+.about, .documents-title, .passport, .attestat, .snils, .portfolio, .foot {
+	opacity: 0;
+}
+
+
+
+.zoomIn, .slideInLeft, .fadeInUp {
+	opacity: 100%;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 80%;
+	}
 }
