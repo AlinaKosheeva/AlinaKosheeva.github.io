@@ -1,0 +1,551 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.head {
+	background: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: 0px 0px;
+	background-size: 100%;
+}
+
+.nav {
+	padding-top: 33px;
+	padding-bottom: 215px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 33;
+}
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 6px 10px; 
+	color: #fff;
+	transition: all .5s linear;
+}
+
+.logo:hover {
+	background: #fff;
+	color: #030303;
+	box-shadow: 0px 10px 0 #f3f3f3;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu-list a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 0.11em;
+	color: #fff;
+	padding: 6px 16px;
+	margin-left: 10px;
+	display: block;
+	transition: all .3s linear;
+}
+
+.menu-list a:hover {
+	background: #fff;
+	border-radius: 50px;
+	color: inherit;
+}
+
+.offer {
+	width: 513px;
+	color: #fff;
+	padding-bottom: 350px;
+}
+
+.pre-title {
+	color: #222;
+	font-size: 12px;
+	letter-spacing: 0.28em;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 900;
+	letter-spacing: 0.09em;
+}
+
+.text {
+	font-family: 'Roboto', sans-serif;
+	line-height: 164.9%;
+	letter-spacing: 0.025em;
+	margin-bottom: 50px;
+}
+
+.btn {
+	color: #1a1a1a;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 18px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.185em;
+	background: #fff;
+	padding: 18px 30px;
+	border-radius: 50px;
+	border: 2px solid #fff;
+	transition: all .3s ease;
+}
+
+.btn:hover {
+	background: none;
+	color: #fff;
+}
+
+.about {
+	text-align: center;
+}
+
+.about-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #0D0D0D;	
+	margin-bottom: 72px;
+}
+
+.text-container {
+	border: 2px solid #DF9B17;
+	box-sizing: border-box;
+	border-radius: 13px;
+	padding: 87px 99px;
+	margin-bottom: 105px;
+}
+
+.about-text {
+	width: 742px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.055em;
+	color: #DF9B17;
+	margin: 0 auto;
+}
+
+.documents {
+	background-image: url(../img/bg2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding-top: 970px;
+	position: relative;
+}
+
+.documents-title {
+	position: absolute;
+	top: 230px;
+	left: 45%;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 24px;	
+}
+
+.files {
+	position: absolute;
+	top: 400px;
+	width: 689px;
+	margin: 0 auto;
+	left: 25%;
+}
+
+.passport, .attestat, .snils {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 59px;
+	align-items: center;
+}
+
+.passport span {
+ 	display: block;
+ 	content: '';
+ 	width: 360px;
+ 	height: 2px;
+ 	background: #fff;
+  	border-radius: 50px;
+}
+
+.attestat span {
+ 	display: block;
+ 	content: '';
+ 	width: 360px;
+ 	height: 2px;
+ 	background: #fff;
+ 	border-radius: 50px;
+}
+
+.snils span {
+ 	display: block;
+ 	content: '';
+ 	width: 385px;
+ 	height: 2px;
+ 	background: #fff;
+ 	border-radius: 50px;
+}
+
+.files-text {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 0.115em;
+	font-weight: 900;
+}
+
+.files-btn {
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	padding: 6px 32px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: all .3s linear;
+}
+
+.files-btn:hover {
+	background: #fff;
+	color: #030303;
+	cursor: pointer;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	display: none;
+	min-width: 0;
+}
+
+.close {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 50;
+}
+
+
+
+/*SLIDER------------------*/
+
+/* Слайдер */
+.slick-slider{}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	min-width: 0;
+}
+
+/* Слайд */
+.slick-slide{}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+
+/* Слайд основной */
+.slick-slide.slick-current{}
+
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow{}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+
+
+
+/* Элемент точки */
+.slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background: #e0e0e0;
+	border-radius: 50px;
+	border: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+	background: #DF9B17;
+	border-radius: 50px;
+}
+
+
+
+
+/*Concret slider*/
+.files-img {
+	min-width: 0;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px 60px;
+	position: relative;
+}
+
+.snils-img {
+	min-width: 0;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px 60px;
+	position: relative;	
+}
+
+.snils-img img {
+	width: 50%;
+	justify-content: center;
+	margin-left: 200px;
+}
+
+.files-img .slider__item img {
+	width: 35%;
+	justify-content: center;
+	margin-left: 300px;
+}
+
+.files-img .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+}
+
+.files-img .slick-arrow.slick-prev {
+	left: 10px;
+	background: url('../img/arrow-prev.svg') 0 0 / 100% no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.files-img .slick-arrow.slick-next {
+	right: 10px;
+	background: url(../img/arrow-next.svg) 0 0 / 100% no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.files-img .reduct img  {
+	width: 50%;
+	margin-left: 400px;
+}
+
+
+
+
+.active {
+	display: block;
+}
+
+.portfolio {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.portfolio-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #0D0D0D;
+	margin-bottom: 120px;
+}
+
+/*Concret slider*/
+
+.porfolio-slider {
+	position: relative;
+	min-width: 0;
+	margin-bottom: 50px;
+}
+
+.porfolio-slider .slider__item img {
+	width: 60%;
+	justify-content: center;
+	/*margin-left: 50px;*/
+	transition: all .5s ease;
+}
+
+.porfolio-slider .slider__item img:hover {
+	width: 100%;
+	position: relative;
+	z-index: 300;
+	cursor: pointer;
+}
+
+.porfolio-slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+}
+
+.porfolio-slider .slick-arrow.slick-prev {
+	left: 10px;
+	background: url('../img/arrow-prev.svg') 0 0 / 100% no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.porfolio-slider .slick-arrow.slick-next {
+	right: 10px;
+	background: url(../img/arrow-next.svg) 0 0 / 100% no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.porfolio-slider .reduct img  {
+	width: 50%;
+	margin-left: 400px;
+}
+
+.portfolio-text {
+	font-size: 20px;
+	color: #030303;
+	letter-spacing: 0.05em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.download-btn {
+	color: #fff;
+	background-color: #37CA45;
+	border: 1px solid #37CA45;
+	border-radius: 100px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 35px;
+	transition: all .3s linear;
+}
+
+.download-btn:hover {
+	background: none;
+	color: #37CA45;
+}
+
+.foot {
+	background: #030303;
+	display: flex;
+	padding: 20px 0;
+	justify-content: space-between;
+}
+
+.foot .container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+		justify-content: space-between;
+}
+
+.gmail, .phone {
+	display: flex;
+	align-items: center;
+}
+
+.mail img, .phone img {
+	width: 20px;
+	height: 20px;
+	padding: 15px;
+}
+
+.mail, .phon {
+	background: #DF9B17;
+	border-radius: 100%;
+}
+
+.phone {
+	margin-bottom: 20px;
+}
+
+.contact-txt {
+	color: #fff;
+	margin-left: 15px;
+}
+
+.right {
+	margin-right: 150px;
+}
+
+.right,
+.creator {
+	color: #fff;
+}
